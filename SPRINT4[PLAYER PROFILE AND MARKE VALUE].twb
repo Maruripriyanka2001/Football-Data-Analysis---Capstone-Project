@@ -1,0 +1,2920 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Football_Data_Merged_Cleaned' inline='true' name='federated.0d86meb1s75hiq11lux0q08934ad' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Football_Data_Merged_Cleaned' name='textscan.0nrly4l1q86eaj1c04jek1alqvho'>
+            <connection class='textscan' directory='C:/Users/marur/Downloads' filename='Football_Data_Merged_Cleaned.xls' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0nrly4l1q86eaj1c04jek1alqvho' name='Football_Data_Merged_Cleaned.xls' table='[Football_Data_Merged_Cleaned.xls]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='appearance_id' ordinal='0' />
+            <column datatype='real' name='game_id' ordinal='1' />
+            <column datatype='integer' name='player_id' ordinal='2' />
+            <column datatype='datetime' name='date_x' ordinal='3' />
+            <column datatype='string' name='player_name_x' ordinal='4' />
+            <column datatype='string' name='competition_id_x' ordinal='5' />
+            <column datatype='real' name='yellow_cards' ordinal='6' />
+            <column datatype='real' name='red_cards' ordinal='7' />
+            <column datatype='real' name='goals' ordinal='8' />
+            <column datatype='real' name='assists' ordinal='9' />
+            <column datatype='real' name='minutes_played' ordinal='10' />
+            <column datatype='string' name='game_event_id' ordinal='11' />
+            <column datatype='date' name='date_y' ordinal='12' />
+            <column datatype='real' name='minute' ordinal='13' />
+            <column datatype='string' name='type_x' ordinal='14' />
+            <column datatype='string' name='description' ordinal='15' />
+            <column datatype='real' name='player_in_id' ordinal='16' />
+            <column datatype='real' name='player_assist_id' ordinal='17' />
+            <column datatype='string' name='game_lineups_id' ordinal='18' />
+            <column datatype='string' name='type_y' ordinal='19' />
+            <column datatype='real' name='number' ordinal='20' />
+            <column datatype='string' name='player_name_y' ordinal='21' />
+            <column datatype='real' name='team_captain' ordinal='22' />
+            <column datatype='string' name='position_x' ordinal='23' />
+            <column datatype='string' name='competition_id_y' ordinal='24' />
+            <column datatype='real' name='season' ordinal='25' />
+            <column datatype='string' name='round' ordinal='26' />
+            <column datatype='date' name='date' ordinal='27' />
+            <column datatype='real' name='home_club_goals' ordinal='28' />
+            <column datatype='real' name='away_club_goals' ordinal='29' />
+            <column datatype='real' name='home_club_position' ordinal='30' />
+            <column datatype='real' name='away_club_position' ordinal='31' />
+            <column datatype='string' name='home_club_manager_name' ordinal='32' />
+            <column datatype='string' name='away_club_manager_name' ordinal='33' />
+            <column datatype='string' name='stadium' ordinal='34' />
+            <column datatype='real' name='attendance' ordinal='35' />
+            <column datatype='string' name='referee' ordinal='36' />
+            <column datatype='string' name='home_club_name' ordinal='37' />
+            <column datatype='string' name='away_club_name' ordinal='38' />
+            <column datatype='datetime' name='aggregate' ordinal='39' />
+            <column datatype='string' name='competition_type' ordinal='40' />
+            <column datatype='string' name='name' ordinal='41' />
+            <column datatype='integer' name='last_season' ordinal='42' />
+            <column datatype='integer' name='current_club_id' ordinal='43' />
+            <column datatype='string' name='player_code' ordinal='44' />
+            <column datatype='string' name='country_of_birth' ordinal='45' />
+            <column datatype='date' name='date_of_birth' ordinal='46' />
+            <column datatype='string' name='sub_position' ordinal='47' />
+            <column datatype='string' name='position_y' ordinal='48' />
+            <column datatype='string' name='foot' ordinal='49' />
+            <column datatype='real' name='height_in_cm' ordinal='50' />
+            <column datatype='real' name='market_value_in_eur' ordinal='51' />
+            <column datatype='real' name='highest_market_value_in_eur' ordinal='52' />
+            <column datatype='date' name='contract_expiration_date' ordinal='53' />
+            <column datatype='string' name='agent_name' ordinal='54' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appearance_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[appearance_id]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>appearance_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[game_id]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>game_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[player_id]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>player_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_x</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date_x]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>date_x</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_name_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_name_x]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>player_name_x</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>competition_id_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[competition_id_x]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>competition_id_x</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yellow_cards</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[yellow_cards]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>yellow_cards</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>red_cards</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[red_cards]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>red_cards</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[goals]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>goals</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[assists]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>assists</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_played</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minutes_played]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>minutes_played</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_event_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[game_event_id]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>game_event_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_y</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_y]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>date_y</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minute</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minute]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>minute</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type_x]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>type_x</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_in_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[player_in_id]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>player_in_id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_assist_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[player_assist_id]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>player_assist_id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_lineups_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[game_lineups_id]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>game_lineups_id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type_y]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>type_y</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>number</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_name_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_name_y]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>player_name_y</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team_captain</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[team_captain]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>team_captain</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[position_x]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>position_x</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>competition_id_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[competition_id_y]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>competition_id_y</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>round</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[round]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>round</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_club_goals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[home_club_goals]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>home_club_goals</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_club_goals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[away_club_goals]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>away_club_goals</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_club_position</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[home_club_position]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>home_club_position</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_club_position</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[away_club_position]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>away_club_position</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_club_manager_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_club_manager_name]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>home_club_manager_name</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_club_manager_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_club_manager_name]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>away_club_manager_name</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stadium</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stadium]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>stadium</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attendance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[attendance]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>attendance</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>referee</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[referee]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>referee</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_club_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_club_name]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>home_club_name</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_club_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_club_name]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>away_club_name</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aggregate</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[aggregate]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>aggregate</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>competition_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[competition_type]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>competition_type</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[last_season]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>last_season</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_club_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[current_club_id]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>current_club_id</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_code]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>player_code</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_of_birth</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_of_birth]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>country_of_birth</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_birth</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_of_birth]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>date_of_birth</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_position]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>sub_position</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[position_y]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>position_y</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>foot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[foot]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>foot</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height_in_cm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[height_in_cm]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>height_in_cm</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_value_in_eur</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[market_value_in_eur]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>market_value_in_eur</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highest_market_value_in_eur</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[highest_market_value_in_eur]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>highest_market_value_in_eur</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contract_expiration_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[contract_expiration_date]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>contract_expiration_date</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agent_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[agent_name]</local-name>
+            <parent-name>[Football_Data_Merged_Cleaned.xls]</parent-name>
+            <remote-alias>agent_name</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Football_Data_Merged_Cleaned.xls' datatype='table' name='[__tableau_internal_object_id__].[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]' role='measure' type='quantitative' />
+      <column caption='Agent Name' datatype='string' name='[agent_name]' role='dimension' type='nominal' />
+      <column aggregation='Hour' caption='Aggregate' datatype='datetime' name='[aggregate]' role='dimension' type='ordinal' />
+      <column caption='Appearance Id' datatype='string' name='[appearance_id]' role='dimension' type='nominal' />
+      <column caption='Assists' datatype='real' name='[assists]' role='measure' type='quantitative' />
+      <column caption='Attendance' datatype='real' name='[attendance]' role='measure' type='quantitative' />
+      <column caption='Away Club Goals' datatype='real' name='[away_club_goals]' role='measure' type='quantitative' />
+      <column caption='Away Club Manager Name' datatype='string' name='[away_club_manager_name]' role='dimension' type='nominal' />
+      <column caption='Away Club Name' datatype='string' name='[away_club_name]' role='dimension' type='nominal' />
+      <column caption='Away Club Position' datatype='real' name='[away_club_position]' role='measure' type='quantitative' />
+      <column caption='Competition Id X' datatype='string' name='[competition_id_x]' role='dimension' type='nominal' />
+      <column caption='Competition Id Y' datatype='string' name='[competition_id_y]' role='dimension' type='nominal' />
+      <column caption='Competition Type' datatype='string' name='[competition_type]' role='dimension' type='nominal' />
+      <column caption='Contract Expiration Date' datatype='date' name='[contract_expiration_date]' role='dimension' type='ordinal' />
+      <column caption='Country Of Birth' datatype='string' name='[country_of_birth]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Current Club Id' datatype='integer' name='[current_club_id]' role='dimension' type='ordinal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Date Of Birth' datatype='date' name='[date_of_birth]' role='dimension' type='ordinal' />
+      <column caption='Date X' datatype='datetime' name='[date_x]' role='dimension' type='ordinal' />
+      <column caption='Date Y' datatype='date' name='[date_y]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Foot' datatype='string' name='[foot]' role='dimension' type='nominal' />
+      <column caption='Game Event Id' datatype='string' name='[game_event_id]' role='dimension' type='nominal' />
+      <column caption='Game Id' datatype='real' name='[game_id]' role='dimension' type='ordinal' />
+      <column caption='Game Lineups Id' datatype='string' name='[game_lineups_id]' role='dimension' type='nominal' />
+      <column caption='Goals' datatype='real' name='[goals]' role='measure' type='quantitative' />
+      <column caption='Height In Cm' datatype='real' name='[height_in_cm]' role='measure' type='quantitative' />
+      <column caption='Highest Market Value In Eur' datatype='real' name='[highest_market_value_in_eur]' role='measure' type='quantitative' />
+      <column caption='Home Club Goals' datatype='real' name='[home_club_goals]' role='measure' type='quantitative' />
+      <column caption='Home Club Manager Name' datatype='string' name='[home_club_manager_name]' role='dimension' type='nominal' />
+      <column caption='Home Club Name' datatype='string' name='[home_club_name]' role='dimension' type='nominal' />
+      <column caption='Home Club Position' datatype='real' name='[home_club_position]' role='measure' type='quantitative' />
+      <column caption='Last Season' datatype='integer' name='[last_season]' role='measure' type='quantitative' />
+      <column caption='Market Value In Eur' datatype='real' name='[market_value_in_eur]' role='measure' type='quantitative' />
+      <column caption='Minute' datatype='real' name='[minute]' role='measure' type='quantitative' />
+      <column caption='Minutes Played' datatype='real' name='[minutes_played]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Number' datatype='real' name='[number]' role='dimension' type='ordinal' />
+      <column caption='Player Assist Id' datatype='real' name='[player_assist_id]' role='dimension' type='ordinal' />
+      <column caption='Player Code' datatype='string' name='[player_code]' role='dimension' type='nominal' />
+      <column caption='Player Id' datatype='integer' name='[player_id]' role='dimension' type='ordinal' />
+      <column caption='Player In Id' datatype='real' name='[player_in_id]' role='dimension' type='ordinal' />
+      <column caption='Player Name X' datatype='string' name='[player_name_x]' role='dimension' type='nominal' />
+      <column caption='Player Name Y' datatype='string' name='[player_name_y]' role='dimension' type='nominal' />
+      <column caption='Position X' datatype='string' name='[position_x]' role='dimension' type='nominal' />
+      <column caption='Position Y' datatype='string' name='[position_y]' role='dimension' type='nominal' />
+      <column caption='Red Cards' datatype='real' name='[red_cards]' role='measure' type='quantitative' />
+      <column caption='Referee' datatype='string' name='[referee]' role='dimension' type='nominal' />
+      <column caption='Round' datatype='string' name='[round]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='real' name='[season]' role='measure' type='quantitative' />
+      <column caption='Stadium' datatype='string' name='[stadium]' role='dimension' type='nominal' />
+      <column caption='Sub Position' datatype='string' name='[sub_position]' role='dimension' type='nominal' />
+      <column caption='Team Captain' datatype='real' name='[team_captain]' role='measure' type='quantitative' />
+      <column caption='Type X' datatype='string' name='[type_x]' role='dimension' type='nominal' />
+      <column caption='Type Y' datatype='string' name='[type_y]' role='dimension' type='nominal' />
+      <column caption='Yellow Cards' datatype='real' name='[yellow_cards]' role='measure' type='quantitative' />
+      <column-instance column='[away_club_goals]' derivation='Sum' name='[sum:away_club_goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[home_club_goals]' derivation='Sum' name='[sum:home_club_goals:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/marur/AppData/Local/Temp/TableauTemp/#TableauTemp_189fvvq13dto5t1cucebj05k62el.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/03/2025 09:19:24 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>appearance_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[appearance_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>appearance_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2931</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>game_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[game_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>game_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2666</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[player_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_x</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_x</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1036</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_name_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[player_name_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_name_x</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>competition_id_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[competition_id_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>competition_id_x</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>yellow_cards</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[yellow_cards]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>yellow_cards</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>red_cards</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[red_cards]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>red_cards</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>goals</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[goals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>goals</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>assists</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[assists]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>assists</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>minutes_played</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[minutes_played]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>minutes_played</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>game_event_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[game_event_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>game_event_id</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2533</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_y</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_y</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>735</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>minute</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[minute]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>minute</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type_x</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>164</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_in_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[player_in_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_in_id</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>434</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_assist_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[player_assist_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_assist_id</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>game_lineups_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[game_lineups_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>game_lineups_id</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>403</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type_y</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_name_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[player_name_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_name_y</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>team_captain</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[team_captain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>team_captain</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>position_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[position_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>position_x</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>competition_id_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[competition_id_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>competition_id_y</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>season</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>season</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>round</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[round]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>round</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1036</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>home_club_goals</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[home_club_goals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>home_club_goals</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>away_club_goals</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[away_club_goals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>away_club_goals</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>home_club_position</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[home_club_position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>home_club_position</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>away_club_position</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[away_club_position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>away_club_position</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>home_club_manager_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[home_club_manager_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>home_club_manager_name</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>459</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>away_club_manager_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[away_club_manager_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>away_club_manager_name</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>450</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stadium</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stadium]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stadium</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>299</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>attendance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[attendance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>attendance</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1665</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>referee</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[referee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>referee</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>296</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>home_club_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[home_club_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>home_club_name</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>223</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>away_club_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[away_club_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>away_club_name</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>209</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>aggregate</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[aggregate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>aggregate</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>competition_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[competition_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>competition_type</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_season</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[last_season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_season</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>current_club_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[current_club_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>current_club_id</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[player_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_code</remote-alias>
+              <ordinal>44</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country_of_birth</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country_of_birth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country_of_birth</remote-alias>
+              <ordinal>45</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_of_birth</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_of_birth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_of_birth</remote-alias>
+              <ordinal>46</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>118</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sub_position</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sub_position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sub_position</remote-alias>
+              <ordinal>47</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>position_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[position_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>position_y</remote-alias>
+              <ordinal>48</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>foot</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[foot]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>foot</remote-alias>
+              <ordinal>49</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>height_in_cm</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[height_in_cm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>height_in_cm</remote-alias>
+              <ordinal>50</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market_value_in_eur</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[market_value_in_eur]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market_value_in_eur</remote-alias>
+              <ordinal>51</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>highest_market_value_in_eur</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[highest_market_value_in_eur]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>highest_market_value_in_eur</remote-alias>
+              <ordinal>52</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contract_expiration_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[contract_expiration_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contract_expiration_date</remote-alias>
+              <ordinal>53</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>agent_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[agent_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>agent_name</remote-alias>
+              <ordinal>54</ordinal>
+              <family>Football_Data_Merged_Cleaned.xls</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0d86meb1s75hiq11lux0q08934ad].[sum:home_club_goals:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0d86meb1s75hiq11lux0q08934ad].[sum:away_club_goals:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Football_Data_Merged_Cleaned.xls' id='Football_Data_Merged_Cleaned.xls_57EAA326B1DC4BB2A92107316642EB5C'>
+            <properties context=''>
+              <relation connection='textscan.0nrly4l1q86eaj1c04jek1alqvho' name='Football_Data_Merged_Cleaned.xls' table='[Football_Data_Merged_Cleaned.xls]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='appearance_id' ordinal='0' />
+                  <column datatype='real' name='game_id' ordinal='1' />
+                  <column datatype='integer' name='player_id' ordinal='2' />
+                  <column datatype='datetime' name='date_x' ordinal='3' />
+                  <column datatype='string' name='player_name_x' ordinal='4' />
+                  <column datatype='string' name='competition_id_x' ordinal='5' />
+                  <column datatype='real' name='yellow_cards' ordinal='6' />
+                  <column datatype='real' name='red_cards' ordinal='7' />
+                  <column datatype='real' name='goals' ordinal='8' />
+                  <column datatype='real' name='assists' ordinal='9' />
+                  <column datatype='real' name='minutes_played' ordinal='10' />
+                  <column datatype='string' name='game_event_id' ordinal='11' />
+                  <column datatype='date' name='date_y' ordinal='12' />
+                  <column datatype='real' name='minute' ordinal='13' />
+                  <column datatype='string' name='type_x' ordinal='14' />
+                  <column datatype='string' name='description' ordinal='15' />
+                  <column datatype='real' name='player_in_id' ordinal='16' />
+                  <column datatype='real' name='player_assist_id' ordinal='17' />
+                  <column datatype='string' name='game_lineups_id' ordinal='18' />
+                  <column datatype='string' name='type_y' ordinal='19' />
+                  <column datatype='real' name='number' ordinal='20' />
+                  <column datatype='string' name='player_name_y' ordinal='21' />
+                  <column datatype='real' name='team_captain' ordinal='22' />
+                  <column datatype='string' name='position_x' ordinal='23' />
+                  <column datatype='string' name='competition_id_y' ordinal='24' />
+                  <column datatype='real' name='season' ordinal='25' />
+                  <column datatype='string' name='round' ordinal='26' />
+                  <column datatype='date' name='date' ordinal='27' />
+                  <column datatype='real' name='home_club_goals' ordinal='28' />
+                  <column datatype='real' name='away_club_goals' ordinal='29' />
+                  <column datatype='real' name='home_club_position' ordinal='30' />
+                  <column datatype='real' name='away_club_position' ordinal='31' />
+                  <column datatype='string' name='home_club_manager_name' ordinal='32' />
+                  <column datatype='string' name='away_club_manager_name' ordinal='33' />
+                  <column datatype='string' name='stadium' ordinal='34' />
+                  <column datatype='real' name='attendance' ordinal='35' />
+                  <column datatype='string' name='referee' ordinal='36' />
+                  <column datatype='string' name='home_club_name' ordinal='37' />
+                  <column datatype='string' name='away_club_name' ordinal='38' />
+                  <column datatype='datetime' name='aggregate' ordinal='39' />
+                  <column datatype='string' name='competition_type' ordinal='40' />
+                  <column datatype='string' name='name' ordinal='41' />
+                  <column datatype='integer' name='last_season' ordinal='42' />
+                  <column datatype='integer' name='current_club_id' ordinal='43' />
+                  <column datatype='string' name='player_code' ordinal='44' />
+                  <column datatype='string' name='country_of_birth' ordinal='45' />
+                  <column datatype='date' name='date_of_birth' ordinal='46' />
+                  <column datatype='string' name='sub_position' ordinal='47' />
+                  <column datatype='string' name='position_y' ordinal='48' />
+                  <column datatype='string' name='foot' ordinal='49' />
+                  <column datatype='real' name='height_in_cm' ordinal='50' />
+                  <column datatype='real' name='market_value_in_eur' ordinal='51' />
+                  <column datatype='real' name='highest_market_value_in_eur' ordinal='52' />
+                  <column datatype='date' name='contract_expiration_date' ordinal='53' />
+                  <column datatype='string' name='agent_name' ordinal='54' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='TASK 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='20'>Which player positions contribute the most assists and goals?</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#e15759' fontname='Tableau Bold' fontsize='20'>INTERPRETATION: The attack position contributes the most goals and assists.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Football_Data_Merged_Cleaned' name='federated.0d86meb1s75hiq11lux0q08934ad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d86meb1s75hiq11lux0q08934ad'>
+            <column caption='Assists' datatype='real' name='[assists]' role='measure' type='quantitative' />
+            <column caption='Goals' datatype='real' name='[goals]' role='measure' type='quantitative' />
+            <column-instance column='[position_y]' derivation='None' name='[none:position_y:nk]' pivot='key' type='nominal' />
+            <column caption='Position Y' datatype='string' name='[position_y]' role='dimension' type='nominal' />
+            <column-instance column='[assists]' derivation='Sum' name='[sum:assists:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goals]' derivation='Sum' name='[sum:goals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0d86meb1s75hiq11lux0q08934ad].[none:position_y:nk]' />
+              <wedge-size column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:assists:qk]' />
+              <size column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:goals:qk]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:assists:qk]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:goals:qk]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[none:position_y:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{002209E8-470A-466B-AFB8-C9FE23AB730B}' />
+    </worksheet>
+    <worksheet name='TASK1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Which players have the highest market value based on goals and assist in the  dataset?</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#e15759' fontname='Benton Sans Book'>INTERPRETATION: The Christian pulisic has highest market value </run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Football_Data_Merged_Cleaned' name='federated.0d86meb1s75hiq11lux0q08934ad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d86meb1s75hiq11lux0q08934ad'>
+            <column caption='Assists' datatype='real' name='[assists]' role='measure' type='quantitative' />
+            <column caption='Goals' datatype='real' name='[goals]' role='measure' type='quantitative' />
+            <column caption='Market Value In Eur' datatype='real' name='[market_value_in_eur]' role='measure' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[assists]' derivation='Sum' name='[sum:assists:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[goals]' derivation='Sum' name='[sum:goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[market_value_in_eur]' derivation='Sum' name='[sum:market_value_in_eur:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0d86meb1s75hiq11lux0q08934ad].[none:name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([market_value_in_eur])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0d86meb1s75hiq11lux0q08934ad].[none:name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' palette='tableau-blue-light' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' />
+              <color column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[none:name:nk]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:goals:qk]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:assists:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B47D7855-9659-4A2C-8DD8-F2C8B8E971A1}' />
+    </worksheet>
+    <worksheet name='TASK3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold' fontsize='20'>DOES PLAYER NATIONALITY INFLUENCE THEIR MARKET VALUE?</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#e15759' fontname='Tableau Bold' fontsize='20'>INTERPRETATION: The United States has the highesr market influence rate.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Football_Data_Merged_Cleaned' name='federated.0d86meb1s75hiq11lux0q08934ad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d86meb1s75hiq11lux0q08934ad'>
+            <column caption='Country Of Birth' datatype='string' name='[country_of_birth]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Market Value In Eur' datatype='real' name='[market_value_in_eur]' role='measure' type='quantitative' />
+            <column-instance column='[country_of_birth]' derivation='None' name='[none:country_of_birth:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_value_in_eur]' derivation='Sum' name='[sum:market_value_in_eur:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0d86meb1s75hiq11lux0q08934ad].[none:country_of_birth:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]</rows>
+        <cols>[federated.0d86meb1s75hiq11lux0q08934ad].[none:country_of_birth:nk]</cols>
+      </table>
+      <simple-id uuid='{8BB5A002-DC19-46BB-9041-CA18597C5F1C}' />
+    </worksheet>
+    <worksheet name='TASK4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>WHICH POSITION HAS HIGHEST AVERAGE</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#e15759'>MARKET VALUE ?</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#e15759'>INTERPRETATION:THE ATTACKING MIDFEILD HAS HIGHEST AVAERAGE MARKET VALUE.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Football_Data_Merged_Cleaned' name='federated.0d86meb1s75hiq11lux0q08934ad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d86meb1s75hiq11lux0q08934ad'>
+            <column-instance column='[market_value_in_eur]' derivation='Avg' name='[avg:market_value_in_eur:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[minutes_played]' derivation='Count' name='[cnt:minutes_played:ok]' pivot='key' type='ordinal' />
+            <column caption='Market Value In Eur' datatype='real' name='[market_value_in_eur]' role='measure' type='quantitative' />
+            <column caption='Minutes Played' datatype='real' name='[minutes_played]' role='measure' type='quantitative' />
+            <column-instance column='[position_x]' derivation='None' name='[none:position_x:nk]' pivot='key' type='nominal' />
+            <column caption='Position X' datatype='string' name='[position_x]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0d86meb1s75hiq11lux0q08934ad].[avg:market_value_in_eur:qk]' included-values='in-range'>
+            <min>450000.0</min>
+            <max>19133333.333333332</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0d86meb1s75hiq11lux0q08934ad].[none:position_x:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0d86meb1s75hiq11lux0q08934ad].[avg:market_value_in_eur:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0d86meb1s75hiq11lux0q08934ad].[avg:market_value_in_eur:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0d86meb1s75hiq11lux0q08934ad].[avg:market_value_in_eur:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0d86meb1s75hiq11lux0q08934ad].[cnt:minutes_played:ok]' />
+              <text column='[federated.0d86meb1s75hiq11lux0q08934ad].[avg:market_value_in_eur:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d86meb1s75hiq11lux0q08934ad].[none:position_x:nk]</rows>
+        <cols>[federated.0d86meb1s75hiq11lux0q08934ad].[avg:market_value_in_eur:qk]</cols>
+      </table>
+      <simple-id uuid='{5453E2BE-5AD9-49B4-BA3E-E216BF255D36}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='TASK1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0d86meb1s75hiq11lux0q08934ad].[none:name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{54A2888E-A091-48DA-B4C4-D79C31D686F0}' />
+    </window>
+    <window class='worksheet' name='TASK 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:goals:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0d86meb1s75hiq11lux0q08934ad].[none:position_y:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{57A09F5F-C0E3-449A-9E63-863D3AC888F9}' />
+    </window>
+    <window class='worksheet' name='TASK3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0d86meb1s75hiq11lux0q08934ad].[sum:market_value_in_eur:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6D3E41BD-9A2D-42DE-946C-F97CE9EAD20A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='TASK4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0d86meb1s75hiq11lux0q08934ad].[cnt:minutes_played:ok]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0d86meb1s75hiq11lux0q08934ad].[avg:market_value_in_eur:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d86meb1s75hiq11lux0q08934ad].[avg:market_value_in_eur:qk]</field>
+            <field>[federated.0d86meb1s75hiq11lux0q08934ad].[none:market_value_in_eur:qk]</field>
+            <field>[federated.0d86meb1s75hiq11lux0q08934ad].[none:minutes_played:qk]</field>
+            <field>[federated.0d86meb1s75hiq11lux0q08934ad].[none:position_y:nk]</field>
+            <field>[federated.0d86meb1s75hiq11lux0q08934ad].[none:stadium:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FC8FCC1A-A1D4-4F3A-A8BE-628FA2FBF3C8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='TASK 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='TASK1' width='192'>
+      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
+      UNF0kru3bqDoRb785GNSeYXbd64x8NUQjvJa3r7Td6C6+44A/sVhalsuo2spVmZX0AoZ0tk8
+      ACWLkzv9t/DNPaHy7G2unK1lO178eWsoxCtoJRWXx04pl0cDSokg3lOd3L3SyNDYPF39v8Pj
+      OPhXx/YNQDAQZHN5nKXldcobmuju6SS85Qcgn8uRTuzg8NSQjoeJx5O4HOafvHJC/CizlTf6
+      36NaLZBUdcx2F+mdOKFIkpqqMhI7cfLZg88V9j0E6un/gFwqSlZ1oad9TM9t0tnTTSAYoaOt
+      lbn1IF1Xb7K1MEyKZlrdEgBxeBTFxPLMEEpTM+7cLpGSg5YKiOQb6L54hvHhQY63Xjx4XekC
+      ideZdIGEOET7BiC0PsvAlx/hD0ZZnRli4MGnJHN7E93A2hRPvvqSbKHE/IuHjLwYO8w7VwgB
+      QCm7w6OBZ1/vazpzY4M8HhpFLeUYfPQZ04vrB665bwCqjrVy+dI5fKsb1LdcoL2lii1/HIB1
+      f5CucydZGH9EwnSMWlOcYLL0E1dLiB+n6zoTYxOkUkkA1HSYSMnLSWeKobEJqluvEdteOXDd
+      /Q+BikkmpuZwue1E/XP4EjbaW+sAsFit2BxOSoUMdrcHp9tBoajtW0qInyuxvcDY/DpLM2OE
+      Ezl0tYjd5aKszEE6k8fhdGKxWQ9cd//zAOsr6JqKRpGpkVHSUT+xaIxAMILLrPJ44CnN52+R
+      Xhtiej1JY4XtZ62gEK9Sfuws//k//Qdu3b5DhSlLTC0jvz3LwGycG13nmBn8mKLuOHBd6QKJ
+      15p0gYQ4RBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBh
+      aBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgS
+      AGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBh
+      aBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgS
+      AGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBh
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='TASK3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO2dZ3NcV5rff7dzDkAj5xwJMFMMEilRGhGgRqMZzXp3ymV7az+B/QFcpSq/
+      dbn8xuUXrtoqz+7ant3V7IxWBKVRoCjmABA5NnIOjQ5ooPO9fgGOJFIERd4GARI4v1fogAdP
+      N+7/nnOecI6kKIqCQLBP0ey2AwLBbiIEINjXCAEI9jW63XZAoJ6V6SGuPRilqKySoweqn/re
+      RGCWgRUtTZW5T3z91pU2gnENWmsWx8utXLo5wQfvv0PP1//CrOQm4l/j7JFSgsZCGoo9ALS3
+      d3DkYCO/v/QFv3r/4rZ/vp1ACOAV5va1u7z+63+Lx6Dh28//yFosSVbFEaaGOjhQaGcZO96R
+      GRKxDV6rcvDJgxC6k6V80z1JYYaZ7JoTrHjb+dnFFoamAvz1v/8N//R3v+V+UMIXdgGwEV5D
+      n5VPOOVHjkdYDUzzP9t+T0FxKR13bmCw2JmbHOXT3/2Wotcu0lySucvfyvMhpkCvMDqdRDwh
+      A0kml9ZpbT3DQHsvkUiERCxGLBbDlVtKhk1Ldm4+1Q2HcRllihtOcLH1bcY6vkI2ZqHXagEZ
+      UEgqEiWFBTQ2H8Ji0AJaKmoa0CfCrEdjxOIJtI48ft7yDqXlFRyoKsbmzqGpughfcGN3vxAV
+      aD/66KOPdtsJgToKCnK4ff0GwahEWZaJex1ejp99nahvmlBcIq+wGLPFjsOspbiyjon+TjKy
+      c7G4ssnzZDDedYfa0+/gsZmxaiLc6+qntP4IuQ4DiimDbJeFjbVVxqfnMNszqSrKAqMNq8VK
+      aWEuibVlVuM6TAYdBTkZKGY32U7Lbn8tz4X0ovMAiqIgSdKL/BMCFcTWV7ndPsKZ10+g3cf/
+      nhcugGQyiU4nlhqClxOxBhDsa4QABPsaIQDBvkYIQLCvEQIQ7GuEAAT7GiEAwb5m1wP08Y0g
+      t27eYT2RIq+kmoP1FezjvIxgh9n1EeDurW+oOvI6LRcuEBm/z/yrV04ieIVRNQIkY+sMDI6g
+      MTupKvIwMDiCp6AcXdzP7JIfi9NDbUXxM9mqqarhxtUv0Ru0KNpsjpnUeCQQqEPdCCDpqKlv
+      JBVaZXx8gtK6A/jmpghE4jQ1NRFYWXhmUxa7E4NOAxJYHU50uz4mCfYTqkYArV7PcFcHmSWV
+      RBZnMRn1GHRaktEwnV3daPRmUoqCkkohyzKJRGJLW7fv3ub4GxdwmnV0ffUHJoIHKHy1CgoF
+      rzCqBLA63sN0SCapWyTfY6Xjzh1M9kwsUgwJiEajSJKEVqf7yWK444ePcOXKl2j1WvTWYg47
+      9GjEKliwQ6gSQGZ5M++Wf//Yk1uq2oFEIs6f61ET8RgyL8HKXLBv2PVrrbe/j1Nv/YzWlhay
+      UkssiiiQYAfZ9X6A6JqP6zfuEVNkPHnlHD9YK/IAgh1j1wXwQwLzo3j9Ekfry3/6zQLBNrDr
+      meCNwALf3uggpQGbO5/XjzfttkuCfcSurwHu3b/LiXPv0HqhBXtolNnIrrsk2Efs+ghwqKmZ
+      b774DK1Bi85SwEGRAxDsILt+u11cDXLhwlnCq35CwSDybjsk2FfsugCmJwYYbf+S4jO/otax
+      wUx4tz0S7Cd2XQDNzScIyC6qso3os6sptO22R4L9xK4LwLc0x8yij4XFJSypeWZDu+2RYD+x
+      6wJYWlnl7Yu/ZHnwLhOz88RTu+2RYD+hKhGmKCkGu9rJqjyMObnK4Og0Dk8eNmmD+ZUQBquL
+      xprNZNZPJcLi4QChlIEMq46OuzepOnIOp1H9BxIIngdVYVA5FsVmNbIWSxFenKe4up6poUFk
+      p4UDTQdob+9EUcq+e//TNKa3OvnzhtqVZUWMjk9wqKZEjVsCwXOjrh/AZMVu1uMHDBYLU95B
+      NAYTqWiY7q5etAbz5mbbD/sBnnWQiSdi5OWWk0wm1bglEDw3qgQQCfnoH54gYo5TmmlElhVS
+      ShKrSQuSTCwWf+Z+gNHuO/RM+TDpNCyM3uP0b/4zeXrVn0cgeC52vRguujpD/6LM4bpiprq/
+      Qik5T4nzRXokEHzPrpdCTE5PoTXkIisKxU3nd9sdwT5j18Og80vzWDQxPm+7zL2uAVLi2G7B
+      DrLrI4DTnUVxRR2V1bX4lmaJJ8Es1gCCHWLXBVCSk8snf/w9WZkZ+EIJfvF+4W67JNhH7PoU
+      qGuwn3dbf8bM7Dx17g1m1nbbI8F+YtcFcKi+kT9d/pKiwnwGAzYK7bvtkWA/seth0B8SmB9l
+      NKDhSF3ZT79ZINgGdn0EWJyfIZlK8HXbJ3SMh2iufrY9RQWC7WDXBTDYd5eV4esoxSdxhL3M
+      R7S77ZJgH7HrAijIzed+3yyVhRlgzcUjeoIFO8hLtQaYG7yJUnCKArEQFuwQqvIAipykt/02
+      ObUnyDDE6esfxJqZj1leY3E1jNZkp7m+6pls9d/8nI75GB6r4WEx3Ck1LgkEqlDXD5CI4/G4
+      WI/LhCeHSEh6zCYT64EAVdXV9A0MPVIC/bRBpvboKbQzIarL8lmeyAWjwosdkwSC71HXD2C0
+      YNZriALxeJLy2gPMDPWg0UtMTU6h0xo2tzeRZWT5+41OIr5lFH58dedZJdaW5jFZsiE8z9pj
+      O0MY7U60BtEmJth+VPcDDHiniJoSNFUUMdz9AKPNiUUXJ7gRJZ7SIEkSGq0WRVG+WwN8/Ffn
+      UFLP3+zy5n/5H5SevaDGVYHgqagSgNmRyclz31+QmVl52+aQQLCT7HoYVCDYTYQABPsaIQDB
+      vkYIQLCvEQIQ7GuEAAT7GiEAwb5GCECwrxECEOxrhAAE+xohAMG+ZksB/P3f//2Wv6SkEnTe
+      +ZbFUAKAxckBekbmmB4bpL2jg47eoe33VCB4AWxZDDc8PMz4+Dhms5nc3NxHXpNTSfJyMthI
+      yMQjQVZCUVIaMxFtiuLiYkYnplAU5bs+gB+WRKtBUZS0bQgET+Kp1aB9fX3YbDZmZmY4evTo
+      d89rDWaMOg0bgLe/j7VEirnVELXFTkLBEDqNbrMf4KEI0u263A4bAsGT2FIA58+fJz8/HwC/
+      3//Ia5GQj4HRWeKmBK8dOYWRMEOTIQyyn9VggKSie6QfQKtNb6cHjUaTtg2B4ElsKYCzZ89u
+      +UtmRyYnz77zg2ds1FTYgHzEllaCV4mnRoE6bl4jnBRTD8He5akCkKPL/Pf/+t/4h999zHp8
+      p1wSCHaOpy6Ci6oPctFdhlZvRC+m4II9yE8mwiRJYmJkkJiIQgr2IE8dARZnxnkwMIWsMYqU
+      sWBPsqUAJifHaTz6BpklKxiJis2qBHuSLW/sU1MTyKk4k9NT+OYmWE/spFsCwc6w5QhgJcL/
+      +tv/TSKRxGh18JvGnXRLINgZthTA4ddbOfz6TroiEOw8T10Ee7tvc619AIPFwQe//BCrYafc
+      Egh2hqcKYHktzr/5y79EI2kwirN7BXuQpwrArkvxySf/isFio6XlIpaHIpCTMTrv3iSv4Qy2
+      lI+RiTm0RjsuY4KVUBRFa+Joc/1O+C8QpMWWAhjtvcvQzCoGvQ6d9rG3KVBYkMV6UibHnc2B
+      ehu9gxNENArZ2dnMLqx8V8KsKAqpVCotJxU5fRsCwZPYUgDF1c3kljVsPpAkTD94p0ZvxKDV
+      sA7ENwIMjM5RW1/L1OgAGkmDXoIUot9S8PKzpQD0BiPxdT8dw/PUluRjMn9/el0k5GNwfJ64
+      MUHSCrFEionJGcwGHQuLC8gaI1pJQpIkZFlOu5Zf0kiiH0DwQnjqGuBuRxcJNCyMryI5c/CY
+      N583OzJ57fXz373vh6eBlb4AJwWCF8VTZynVxXmMe730LyZxmXbKJYFg53iqAHy+ZQwGE5Fw
+      gJgohRDsQZ46Bao9eIqyhuMMdd3n+U/2Eghefp4qgLHBB/R65zA7s2lWdZqYQPBys/W+QF23
+      eDAwuflgPUQiBXoR1xTsMba8pEuqmzhz/CAGvVaEIAV7li1HAKPZysjoODqTEY9Nj+iIFOxF
+      thRAKpWivukwyViEWCKJTtpJtwSCnWFLAXi7b3C3dxqjxUbz4aMYxCxIsAfZcg1Q1XSKiy3n
+      yXFo+cM//441sS+QYA+y9QjQe5eBmTAHD5/gjbffQ3psChSPRZB0JnQahVAwiNnmgGSMUHgD
+      s9WO1Wx80b4LBGmzpQCqm09R3fzk15KREO23b5Db9BbW8CRLEYjF5rEZkhgtLgZGxnj95PEX
+      5bNAsG1sKQBFkbl//y4HDx7B23OPvIZTuB7e1HVmB3VVJfiB4FqCqoYGJvr6SCYTrC0vodEZ
+      v+sDkGWZRCK9OopUKpW2DYHgSWwpgMjqLFeuXMXrHScjr4yqLfqBjXqZ4No66/EkNruNmvoq
+      utrbSUkSOp2OZDKJTpdeGlmr1aLXi55Mwfaz5SLYklnEB++eI2WwUZ5lIfGDREAk5GNscYPA
+      zAhZpdWszoxTVlVNltNGT3cXnsLSp9dYCAQvCU+9TudX/LgsEiOD/XgqmzA/DIWaHZkcPpL5
+      3ftq6x9uGmQvwJ1d8MKcFQi2m6dW9zQ3HcCiM5BRWvPdxS8Q7CWeKoDl+Wl8gQBz8ytoRCZY
+      sAfZUgAD7d9y7X4/o6OjbDysBhUI9hpbrgHqjrzB2lqEog9/Q57TvJM+CQQ7xlOnQEY9/NNv
+      /1YckSTYszw1ClRSWUfpSgSN0SrWAII9yVMF0NHdh9FqwmMxIpYAgr3IU6dAZeVVFLjtjC6F
+      RTukYE+y5Qgw1HUb7+wqEuByWJHFEUmCPcjWWyPqDUgaCaPRSklZOQYxAgj2IFs3xVc1UFdR
+      hhILcv36DaJbLALkVJLF+TnWowki6yFmZmYIhiMvyl+BYFvZUgBf/+G3/PYf/8jMUhCn08FW
+      QaDpkT7WEgp9Pb1MTk+h0xvo7e15Qe4KBNvLllOgc+//O04mNveDkyTNI9uj/xCrzcrA1DQm
+      iwMSEWamp1A0BtEPIHgl2HoNYDShf4auxqWlAE2HDzPS1YnidnJQ9AMIXiHSLtuvaWxgaHiQ
+      0poG9MkQPd1d5JRUiH4AwStB2tep1mCmvrHp4SMrhzx56ZoUCHYMEdwU7GuEAAT7GiEAwb5G
+      CECwrxECEOxrhAAE+xohAMG+Zk/lq1LxCPdv32YlHCG3pIbDDRVb1jAJBLDHRoC++1dwlB/i
+      YmsL8uRdJtZ22yPBy86eGgEKy6q5eusqY916YgkXB6y77ZHgZSd9ASgKS/MzSGYXFk2C+eVV
+      3Fm5ZDpt2+De82G1Z2C3GIjJCi5PNsY9Nb4JXgRpXyLLs6OEknoMWonZhQU8WdkMDfRvh2/P
+      TV/nLSqPnuNiaws50Qm8oV1xQ/AKkfYIsDS7RMQYZnkBnOYU3pEhUtLu9ANUVB/gm2t/os+o
+      Iym5uWBOINoIBE8jbQG4PQ5MplzWl2eQDBbqKksZ6OndlX4AnU6LRiMBEpIkodPp0YowkOAp
+      pD0Fyiuvx5AIUlheTWG2h8nxcQorqndldT080Enj6be52NpChX6VMREFEvwEaV+nkqShqLTi
+      4SML9e6sdE2qpv7gSa5f+5Z+WcbqLuesY9dcEbwi7KkwqNGawfkLFwCI+Ka51TnEqYM1u+yV
+      4GVmTwkgvu7n+vU7RFIyVncer5/Y4phLgeAheypS3td5k7LDb3CxtQXP+ijj4TQ+niIzMdTD
+      tWvX8E4vIjbG25vsKQFU1R6k98aXXGq7zHjKQ6ldva3p/muMr5lobm5mqe8a3uX17XNU8NKw
+      pwTgD/h588I7JNfXWF/fSMuW1ZXD4lgv169fZzog4zKLbVn2IntKAAtTg0z03cVVf4bj2TGG
+      /eptuXIrqCvZjGhVNh4m0yoEsBfZUwKoqDuKfy1BZV4GMUcFVW71tiZ7rhJxVtHa2oJuuY+h
+      RTEF2ovsqSiQpKTw+dcJ3b5CNA7ljU2obQjwFFbx4Oot2sYMRKISb7tM6h1TFPwrC6wEwthc
+      HnKz3KJP4SVhT40AU+ND1B7bLIYrMYaYS+OmbbZnkuXarKfOyMnHalB/UHJwtosr7WOgKAy1
+      f8vQjE+9Y4JtZU8JoOHoOQKj7Vxqu4xUfDStKNBk3w3slcdpbW2hULPC4EJYtS2tzkgissaK
+      z8d6NIleJ04df1nYlilQbD1IKK7FpGwwMbtEdn4xOZk7X4egM1h47exbAER8M9zvG+NYQ7kq
+      WwWVh/ji62+Y69OTUPT87KhFtV+2nFoOlQXp9s5QWNVEea5LtS3B9pL2CKAoSYYHe5iYXmZ+
+      ZZWq6mrGvAPb4dtzIyciXLt2g7lJL7eHljlQWaDalsmRzc8/+AWtra1cONPEg54BFJXZMN/Y
+      Lbwbbt577z0s4TG6xhZU+yXYXtIeAebGvDhyCoksx5Fj6/T2dJGSjLvSD9B940+4Cxr5169u
+      cKLIzNRGI2UadX9bkZP0dtxlZjlIbmkNh+orSSbV2TI4cvDfaedPy0NEIhFeqzKL8w5eEtIW
+      gMFiIeRbZmkljr3QTllhAaPD3l3pB8jNL+TK/XtYDTq6piN88KYevco/Pd51lZirgfdP5tL5
+      9R+ZyC6gLlddJEiXWUJT1QLTy0GKChso8DjQiYOXXwrSFkBWXjFZOfkUlyeRkhEWVvxU1Nbt
+      Snw1hUTjwRMcqCkBQJvGBC8zv5KOq3doG98Mg553PsNpIVuwMnKDJUMlra35jHZcpWt0niNV
+      +eqdE2wb2xMF0uiwWkxYHG7Ky8t3pSEeYGl+HCUZ5YvPPqOjZ4hkGhVssqLh3Z//HLdJi9Hm
+      xpJGGNRZUEtw5C5tbZfpngpRkpuh3jHBtrKnEmEWewb5VXUcaqxlaW6caBxsKm/c86P3kbIT
+      BAxZNNiXGZgP01yoLrJlsOXwq1//EoBkbIO1+BZHbgp2nD0lgIL8Mr649C8U52czMRvkgw/V
+      hUABPAW13OnqoezAa8RWkxRmmLfFR41Wy8ykF0d9g6opWmpjiY//9Ro2m5lINMKhU+cpz1MZ
+      VlUS3L76DcvhBGZnFudfP7bvMtR7KhHmHe7m1Jtv0u+d4kRhnOE0Eq5OTx5aRcNkfwcjy+vY
+      jeqnQJHVCf7P//uYtrY2Pv74j7jzSlSvT6Kr0+hza2i92MLRmnwWlpZV+7UxP0DIXsp7F1vI
+      jU8zvg97qPeUAIorDqDVGvnl+y1sGIopS2OqPdl/h+Kjb9Pa2kJTZiqtTHAkMIerqIFz585R
+      U+jAF1Jfo2EtOMyh7Dgf//PvmYw6ONlUqdqWOa8Ok2+ETy9dZlrKpXR3lm67yp6aAmUVlD38
+      yYyhJIvOnmFONlerslXacJJvrlxhslNCY3Jw/pD6qyOj7CSVoTu0tfVSWN3MibIc1bbiwSlu
+      9kyRl5VBcGaQAY+H+lKV9uQk8WQK0JKIRZFRf0eUkzE6791hwR8mp6SaQ/UVaCR1EypFTtLb
+      fpfp5QCZ+WUcbapFqzZsrMgMdN1jfNaHI7uQE4cb0f9g+N1TI8BGcJnPLn+OLxxFTkUpK6/4
+      6V/aAr3ZyTutF2ltbeXNo7VMzi2pzgSvLQ7wYCJIUVERvrFuRufVNyqk4uvobR4qKyrIy3IS
+      icZU24osjZJwV/DexRaKtD5m1A9yeDuvQnYdra0tSHOdjK7GVdtaGLzGqqmU1tYWnNFpeqdW
+      VNtam7jFWDyH1ostFJnXae+feOT1PSWA/q5b1B85wY2vv8Y31cPChvp5eyIeJSnD8vwUc8E4
+      ljTGSjmZQG+04nI6sZp0pFLq47Pm7HqOlVm4c+cuG4Y8DtcWq7Zlya0jX7vKp5cuE/HUU5JG
+      8WBOURUTnTdoa7vMeNhEnl39F+bKr8E3dIe2tsv0z0cp9KivK7Pk1hCd7KDt0mU6vEuUFDw6
+      Wu4pAZSW1RGLJ3nzVDN3uqewpNHENdb5JVPzC3x5oxNv+7dE9A5Ujug4C5pozNPR09uLKb+e
+      6kL1i5Po8gB3R9c4dPgQho0ZHgxNqbYlx9eZmttcRM9NjBNLIzprcWaS6diMlGXk5GHWqb+0
+      DFY32RmbpeiOzGxsJvX/SK3JSUHWpoCszkyctkez+XtKAJ6iKqoKPdg9BfzF3/xHqtNYBOv1
+      Ru7duEJRdT35WW7S2RYiMNXOwKqe06dPw/IQ/ZPqIzcanYlUNMTC/Dz+tQgmg/oMdSw4R8pR
+      xHsXW8jXh1iOqjaFt/smWfWnaG1tIS85x7BP/dRsfvA6+pJjtLa2UOWI0ZfGFCjkvU7Y00zr
+      xRYOFtvo7B975PVXdhEc//I/ocSff/tnXeN/QFv8xk++r+zgeeLcZXxuDGd5LeUe9XkAvcVJ
+      eLmP3qSPteAGh83qL1qDu4wP38slEouj0xuxWNR3qpmzajhU0MOnly5TXv8GhWmcp1BSfZCv
+      vvmaiS49ScnCuxkG1bZyKo7Q9advaRvSk1B0nK9Tfyezlx0nfukL2iYNJGR4/a23H3k9bQHI
+      yRgjw8M4c0owKWHGpxfJLiilIDuNhtxnQElGIKFi5wf52aowp3qvsqQp5+3zh3lw5V8ZcXmo
+      zlZ3hVg9lfzVr8uQZYVUbJ3VSBJFQfWUymAyYzCZScU2uH79Oq+dPINezXJHkiipaaKkponw
+      0iT3ekc53qgucKDRar+P+kgSmjRSapJGi0bzcNCVNjc6TsMYWglSf/brMVtpC2A9vEZBWTXD
+      fX1YnVYONDVz//49CrJPpGt6V3F6Cli41sEXs0bCawrnrervaADJeIxILIHeYGAjOIecmaFq
+      52oluc7nbV8ia/XEUzKnz72t7uIHUBQmh3voHpmhrLaJw7Xq+yfG+u9TeeJtanLNeG+0MeKL
+      UZ+tbnRaGL6Dp+lNjpXamem+weD0Ckcq1IV6Q6O30Fed5d06FysTvfQNjXP60Peh8bQFYHO4
+      8A72k1lQTGRlks4HHaQ0phffD6AyJpmSZeRn8MfiLqAkd5rFwDoFFTXY9Kj+HOtLQ7TdnKAg
+      245/eZH6195CTiWQVSw6wxPtKAUHeacpn9WZAXr7hzlzpE6VX9HlYe5PRXj/3Xe4+en/ZSbr
+      NxRY1H3G0rpjXL9+BS+gM7s569Kq/r6yKk8wdPUal/pAY7LzRrVbtS1L6WtornxD25gCejOn
+      T59+xFbaApj19rOhteM26onqDOR5PExPzrzwfoCYymFRq9GgfYbegrG+b5DyDvL+Gx56v/2U
+      UV8p9Xnq4oSSnMDsyKCgIBspFkRGeqb+hifhrjxJ5vVrfPGnPnRmO6fPnEKvcgjQeoowrH/F
+      Z5/7SEgeTtj0qkcTvd7Dz1ovAhALLjK54KO6OFelMSfnWzZtxcN+xuYWqCkrVjll1HPu3VYA
+      ktF1Rqamqamq5M95tbQFkJlfgia0jizLFJeU4g+sUdfY+Oqurh+SXVxL1zc3aBsxEI1reCeN
+      YjhHYTMlM9dYXfURN+ZSla9+UZeKrTG7FMBoMhEOrrAa3MCapU6YGr2V4rwsppZD5BQWk0a5
+      EygKc1NjrAQ38OQW4DSlEVNVFJbmJlnwreHOyiXDZkJB9Q43+BammV3yY8/IxuN2bE4eHhpL
+      OwxqtjnJz88n2+PGbLGTn5+P07Y9lZO7iS2jiF/+6gNaW1u5+NYxvGOTqjPB/vG7TG+Y6enu
+      xikF6JlYVO1XZMmLLv8ArRdbONFQxOTMnGpbGwsDzMkZvHexBYtvgMk0iuEm+2/QPxvG7XbR
+      d/NPxI1O1bZWxu9xd9iH2+1ivOsG/qQBtZUQG/NdfN05i9vtZmm0k9lA4pFCxD2VB3hRKHIS
+      p1P9Tg56oxXf/CSyojA9t4zRoH5BbSs6So01QNuly4wF9JxoqlJty5xdgd4/yqeXLjNLFoVp
+      FMMZzTYCi7OMjIwQjIJJr/7S0pvthH1zjIyM4FuLYzGqn0/oTHZiwUW8IyMsrq5jNe/hRNh2
+      sjo7wr988imfffYZn/zz37EY0agOW9ry6qkpdHHhwrvobDlU5KkPEUdXRvjmgZekwcaxKg+3
+      2jtU20LSYXi4R5FGp0vrYsgpO0BVnhW/P0DV4dN4zOrnU47cGprLM/H7AxTWHaEwQ32CwuAq
+      42RDPqt+P5kl9VQWPDr9FALYArs7k6ycIi5cuMA7585gSiO1vzL8LQlXNZ9//jkHyx10jc6q
+      tiUnNqhsPMPxUgdf3u4mKcuqbUUWBohmVPHexRaKWWIinWK4B18TdVbz4Ye/JDp6kzG/+mK4
+      xaFrzCn5fPjhLzH5B+mdWlVtKzx9hx6/kw8//BW50jJ3+ycfef1VX6u+MPSWDM6c2LxbuCtP
+      k05az+opZuzT6xiNZm60D3Pi3VrVtiz5hzhsCeByFfGaxcGalEahWF4djpGrfHppBIu7mLfS
+      KIbLzCmh89YdfOMGwmE9tVb1l5Y9qxRfdztti/1sbMR4o1n9CGDKLCV68wZtl7xEohGOvXHw
+      kdeFAAC57x9QIs9/l5EKT6HJPfKT77N4Kvibv64ARSElK2jT2a4CcLk21yPu7HzGOrspzPGo
+      zATree3sZmlAeGmSuz0jnDigbk1htGXw9s/eprf9JnpTDpY01gBmVx4VhZksBtbJLa7AnUYS
+      MhmXefcXv2Ku7ybjK2Y8rkfFJAQAKGuzsLH0/L8Ya/jRU/LA72Bt68iMBDxp0iLlHUUqev0n
+      /6QcD/GHP1xmbnqWnMpqzr35jurYvZKK8s1XX5Nd3kShZYOSUvUHCk4O3kO25hOzFVMaH9vM
+      BGepzAQPXifibqT1VBbee1/TN+XjYJm600cDE3eY9bzL9IKfU/WFdPSOcmY7M8GCx4j4YH3+
+      uX9NiYWeKc69PtuLs/Ys1dk3oaie/oEhzp5oen4/gfW5AeSsGlLrC6z6p1gvrSNX5TSovP44
+      V7+5wsC4j0BRCT9/Tf1dO7O4gXtf3KRt3EAsqfBmg/qQqj2/gZn735JTUEoylSQnO/uR19MW
+      QHBpioHxBSxODxZljWAkRSQpceb4oXRNC56AveQ4luvfsqIt4kRuJoXZ6jfYsuZV41qZpLK0
+      lEt/uMsx9RFVTPZM3v35r3kXiAYW6Bkc42iDun5loz2HX/zqAwDi4VW6vF6OHsQy5moAAAjL
+      SURBVKhXFYWz5lTzi4ubd/xkNMyDfi9y/sHtywQvL69x8PgxJvr6iZEEJHQ6cZzQiyIV9TM6
+      Nc/S5C1mF6Z449wFXGoXr4rC3OQgSY2Wt944QTSNTHAkHERrdjLWcxu/4qSpplS1rdh6EMXo
+      ZG64g9k1LYdVrkseR1FSZHoyYTszwRpSJJIKiVQKndFG04Em9KkoyXQNC55IZGWM7NoznD1W
+      zaGjRxgf96q2tb4wgr38MHZdDN/iOP50GmK6vmZmepShFQ1GXz+zEfWX1mzf14zNLdE54SeL
+      RUaW1lXnYOKBWf7x4z/y2Wef0fbJ7xme86PZzkxwYWkxI13tOLIKcBi19PR0o7O5xOLiBWEr
+      Pk6+dgEl5wBVeVkcbf7xQvyZbRU0kKNLUlNRwvB0BHcap0DZnVl03L1FQUkhkt6G3aj+0rK6
+      8+m7d42c/AI0WhN2s3rHDM4ccrM8XLhwgZ+9/Rbux/pk098d2uri8NFjDx9lkqe+R1vwOKvD
+      EAv86OnGXAkIgb+PJ042zR5wPbYrXiIC8o+TU3UVm9GV995/HwjC452MOjNof3pBW9p4htLG
+      M5sP0tz4N6fqBH9R9ed+EvU5EwAkHW+8cRoAc2YJJzIfe1lR1JZ4PZ0f9gNoHo45vuE+1DTX
+      2vOLMdgcKIryXXeQEpoC5fkrDiWzBwz2R2yxvvjMnWKPYHT+2NbGMqRUZEENNjA6H7UV9UNK
+      RW+tzrzp2w+JBSEZeX5bRifozI/6lSYvk60XJoA/k0ql0Gq350ysl9mWRqPZln+qLMtI6bYB
+      /sAW8N0NKB326nf/wgUgELzM7Egx3FBfDwkZunt7H3l+PRQkmkgxPf3kvW28w94fZU0nBx5w
+      p/0B3smtkk1xensGn+rP8Mhm5CQWXuX27Tt0dHQRjqUXt1od7+Na1zCRwCKjUz+o90+EmJoP
+      EllfZnr2x/P5Z2Fpxst8IMrUY99TYj3A0Niz7QvU29OLAvT2dn/33Ih3mNGBbu7fb8cfWOXG
+      9Vt0dHYTXJnnyytXuXH9JuFHtnJXGOxup72jA1/o+5BRaGGMieXn26AgGpzlqyu36OkbYs2/
+      zEooQmhmlMWNzb+3seYnknj2Qr++zluMTC6yODnAUmCD1eBPVPYlIqyGIjsTrEklNz9UKpVi
+      Y8nLrZEgRr2GwgwTeouL+/fvI+mNLE2NE01CWVk+k1NLxBIy5Y9t7SmnUiiKFq1WQ+fdm8ga
+      HbbMfMIr02ysRSlpbiaVSrE0M8b4zAK5heVMjQ4jaTXU1lQx4p1gNRyluqqS+ckpqpuamfeO
+      QGKNe12jROIyVXlmhn1JipxaZv1xIiE/Jo2BQ+dOMNbZy5qs5fTxQ49lbjXY9El84TippExX
+      +33WNuIU5pnpGAxy8lgZo4MzTE7oqSzLZnp2BYPNTSowh9aZR3P91kkjRU4RXQ/Sdf/+Zr91
+      eJGFxVWqGg+QSkTp7h2k0KUnYs2jwP3k0yyTqe//B0vTo4wvBkgqEvk2LXqLDYdZj5xKkJGd
+      h0ETp7CsBnNkmVhKxsbmdEWOrRHROTnSVElyfYXrN7oAidoyNyk5wt3bXSRTCvWV+dweXEKK
+      Bsh02cgqqafksZMxFUVGVhQkScv85DDjAQ1NhQ6Ge7vxAqVuCclVTKd3iBQ6avNsDKzE0MgK
+      p3703YPG7CYRXCRu06CPh5kKxFiaGmI9EUejy0WbXCYcTVKcn8/o9Az1ZbnMJtw7MwJIkkJK
+      llFkGSQNlXUHyHRYUBQFizOTsrJScp0Sc4thrHYbYX+IuoOHycn4cYZHZ7Jy4OAhygpzMNsz
+      aG4+CFE/JncutRVFIG/O6JZWfOg0Cr5VP578YmorigksrFBc10hZwWY63GjSsR6VyXaYWZyb
+      YWktisNmRZF0NDQfxG6zUNd4kJwcD7XFeWyEVgglNQRXfE/Mc+SXVDA3OYocDTOzHMBms5KV
+      k0tZeQ0uq5my6noKMxzMzk4ja3RYzWYsTs9TL/4/Y7Q4KCkrozQ/E99KADmxhj+cAK0Bh1Fh
+      cjVCjvMpnXiKgqLIKDKshqIcPnyIDJuJoqoGyjJ09M/FOXnmNLGlMRbX4kwMdTK8EsNt+v4e
+      KWn1JKNRZEVmbWWFwtomipwGwsnNflurp4CG0iwC4Rgl1fXk5mbRWFcLyScEBTQaqmoP0Fhf
+      SU52HtW1dVgMeqobm8h0mkBRCIeC5JfVk+eyEE0oVNYfwGHSbRlGqSjLY3Ri/uFnVUhpjRw6
+      WIsSjTA7t4TFakcjSVQ2NJHl2Ny4QfvRRx999JPffppYTXr6B4awu7PJcFqRdGYMWgWLyYTJ
+      YicaWiahc2M1xFE0RoqK8vAODaExWDBrZBS9Cf/qKlaLhdh6iNHxSTbi4LRZsNqsKJKW+Noq
+      E1NzuHILsBr0GLQKCUVLRqYHm8WCxWzA6s5kbmyYDVlLQW42VqeLWe8AqxtJSiqr0USCKHoT
+      2ZkuDBY7OlLojBY0Sgqb1YbeaiG06sfudOG2GIgpEiF/EKvVgiyn0FtdmImjc+XhMqSIyzpy
+      CgpYmfZicmRgMpow6DVk52bjXw1gd7mxW0zYbDb8K8toNBKh9Rhm06NhRzmVQm+yIkWDBKKg
+      SUXRmaxkZediNOjItuuZX4OinK17jQ2aBAPDY3jySsjNMNM/6MVocZAM+5haClNR5GGgfwBF
+      b6MoL4uMvBJKMo2E4hps5k1/JI0eg7zBsHcCd0Epvskh4kYnRR4nOlsGqeA8C2GFyuIcFK0J
+      k1bBbreDRkN4bR0lHiWlN6DXaCCVxDvsxR9cIyc/j+mxUewZmRitNvTImM0mHJ48lqeHSept
+      eIwyfeMzeDw5mKQESUVDILCG1bIp+lQqhSsji/h6CHdWDlqtHhNRxiYnUXQeCrLNxBUtWZmZ
+      GM0mTDoNScmwRxbBisz4yCChmERdXQ2GNJpXXkUmvENkFVVgTaN18GUn6l8mYcvE/hxl1gvT
+      Y8yvhKioa8RhevJ3szcEIBCoZH/dKgWCxxACEOxrhAAE+5r/D4wk819maH7NAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='TASK4' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
